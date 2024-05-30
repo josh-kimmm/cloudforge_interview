@@ -12,6 +12,8 @@
 7. Run `pnpm run db:init`. This will update your local DB schema and seed it with fake data.
 8. Run `pnpm run dev` to get the app started.
 
+Watch this [video](https://www.loom.com/share/8fdf01adfea44a93ad47820b10cc8cae) for a quick Demo on how it should all work
+
 ---
 
 # Engineering Outline
