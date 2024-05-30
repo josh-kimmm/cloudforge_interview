@@ -57,7 +57,7 @@ export default function Email(props: { emailMessage?: string }) {
         name="message"
         value={emailMessage}
         onChange={(e) => setEmailMessage(e.target.value)}
-        placeholder="Ask any question here"
+        placeholder="We can only provide quotes on brass, copper, stainless steel, aluminum, and titanium"
         rows={10}
         cols={50}
       />
