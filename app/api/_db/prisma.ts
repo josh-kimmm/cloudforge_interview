@@ -1,4 +1,4 @@
-import 'server-only';
+import 'app/api/_errors/server-only';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClientSingleton = () => {
