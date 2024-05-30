@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator json {
+  provider = "prisma-json-types-generator"
+}
+ 
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL")
+}
+ 
+model Quotes {
+  id                    String      @id @unique
+  client_email          String
+  cf_admin_email        String
+  prompt                String
+  message               String
+  finalized             Boolean     @default(false)
+  created_at            DateTime    @default(now())
+  updated_at            DateTime    @updatedAt
+
+  @@map("quotes")
+}
+
+model Metals {
+  id             String      @id @unique
+  material       String
+  shape          String
+  grade          String
+  finish         String
+  /// [MetalDimensions]
+  dimensions     Json
+  inventory_id   String      @unique
+  created_at     DateTime    @default(now())
+  updated_at     DateTime    @updatedAt
+  inventory      Inventory   @relation(fields: [inventory_id], references: [id])
+
+  @@index([inventory_id])
+  @@map("metals")
+}
+
+model Inventory {
+  id              String      @id @unique
+  final_quantity  Int
+  quote_quantity  Int
+  price           Int
+  created_at      DateTime    @default(now())
+  updated_at      DateTime    @updatedAt
+  metal           Metals?
+
+  @@map("inventory")
+}
