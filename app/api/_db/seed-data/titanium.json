@@ -1,0 +1,78 @@
+{
+  "metals": [
+    {
+      "id": 1,
+      "material": "titanium",
+      "shape": "sheet",
+      "dimensions": {
+        "thickness": "0.05 in.",
+        "width": "48 in.",
+        "length": "120 in."
+      },
+      "grade": "grade 2",
+      "finish": "mill finish",
+      "price_per_unit": 250.00,
+      "unit": "sheet",
+      "quantity_available": 100
+    },
+    {
+      "id": 2,
+      "material": "titanium",
+      "shape": "plate",
+      "dimensions": {
+        "thickness": "0.5 in.",
+        "width": "48 in.",
+        "length": "96 in."
+      },
+      "grade": "grade 5",
+      "finish": "mill finish",
+      "price_per_unit": 700.00,
+      "unit": "plate",
+      "quantity_available": 50
+    },
+    {
+      "id": 3,
+      "material": "titanium",
+      "shape": "bar",
+      "dimensions": {
+        "thickness": "1 in.",
+        "width": "1 in.",
+        "length": "144 in."
+      },
+      "grade": "grade 2",
+      "finish": "polished",
+      "price_per_unit": 120.00,
+      "unit": "foot",
+      "quantity_available": 200
+    },
+    {
+      "id": 4,
+      "material": "titanium",
+      "shape": "tube",
+      "dimensions": {
+        "diameter": "2 in.",
+        "thickness": "0.125 in.",
+        "length": "120 in."
+      },
+      "grade": "grade 9",
+      "finish": "mill finish",
+      "price_per_unit": 180.00,
+      "unit": "tube",
+      "quantity_available": 80
+    },
+    {
+      "id": 5,
+      "material": "titanium",
+      "shape": "rod",
+      "dimensions": {
+        "diameter": "1.5 in.",
+        "length": "96 in."
+      },
+      "grade": "grade 5",
+      "finish": "mill finish",
+      "price_per_unit": 65.00,
+      "unit": "foot",
+      "quantity_available": 60
+    }
+  ]
+}

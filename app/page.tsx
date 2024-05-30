@@ -1,3 +1,5 @@
+import Email from '@/components/home/email';
+
 export default function HomePage({}) {
-  return <div>I'm considered a child for layout.tsx?</div>;
+  return <Email />;
 }

@@ -1,0 +1,75 @@
+{
+  "metals": [
+    {
+      "material": "aluminum",
+      "shape": "sheet",
+      "dimensions": {
+        "thickness": "0.125 in.",
+        "width": "48 in.",
+        "length": "96 in."
+      },
+      "grade": "6061-t6",
+      "finish": "mill finish",
+      "price_per_unit": 125.50,
+      "unit": "sheet",
+      "quantity_available": 150
+    },
+    {
+      "material": "aluminum",
+      "shape": "plate",
+      "dimensions": {
+        "thickness": "0.5 in.",
+        "width": "48 in.",
+        "length": "96 in."
+      },
+      "grade": "7075-t6",
+      "finish": "mill finish",
+      "price_per_unit": 320.75,
+      "unit": "plate",
+      "quantity_available": 100
+    },
+    {
+      "material": "aluminum",
+      "shape": "coil",
+      "dimensions": {
+        "thickness": "0.1 in.",
+        "length": "45 in.",
+        "diameter": "2 in.",
+        "width": "0.5 in."
+      },
+      "grade": "5052-h32",
+      "finish": "bright finish",
+      "price_per_unit": 1.25,
+      "unit": "pound",
+      "quantity_available": 4000
+    },
+    {
+      "material": "aluminum",
+      "shape": "tube",
+      "dimensions": {
+        "diameter": "1 in.",
+        "thickness": "0.125 in.",
+        "length": "120 in."
+      },
+      "grade": "6063-t5",
+      "finish": "anodized",
+      "price_per_unit": 22.50,
+      "unit": "tube",
+      "quantity_available": 300
+    },
+    {
+      "material": "aluminum",
+      "shape": "bar",
+      "dimensions": {
+        "thickness": "1 in.",
+        "width": "2 in.",
+        "length": "144 in."
+      },
+      "grade": "2024-t351",
+      "finish": "mill finish",
+      "price_per_unit": 15.00,
+      "unit": "foot",
+      "quantity_available": 200
+    }
+  ]
+}

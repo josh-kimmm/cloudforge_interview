@@ -1,0 +1,80 @@
+{
+  "metals": [
+    {
+      "id": 1,
+      "material": "stainless steel",
+      "shape": "sheet",
+      "dimensions": {
+        "thickness": "0.12 in.",
+        "width": "48 in.",
+        "length": "96 in."
+      },
+      "grade": "304",
+      "finish": "2b finish",
+      "price_per_unit": 200.00,
+      "unit": "sheet",
+      "quantity_available": 150
+    },
+    {
+      "id": 2,
+      "material": "stainless steel",
+      "shape": "plate",
+      "dimensions": {
+        "thickness": "0.5 in.",
+        "width": "60 in.",
+        "length": "120 in."
+      },
+      "grade": "316l",
+      "finish": "no. 1 finish",
+      "price_per_unit": 480.00,
+      "unit": "plate",
+      "quantity_available": 75
+    },
+    {
+      "id": 3,
+      "material": "stainless steel",
+      "shape": "coil",
+      "dimensions": {
+        "thickness": "0.025 in.",
+        "length": "24 in.",
+        "diameter": "3 in.",
+        "width": "1 in."
+      },
+      "grade": "301",
+      "finish": "bright annealed",
+      "price_per_unit": 1.50,
+      "unit": "pound",
+      "quantity_available": 5000
+    },
+    {
+      "id": 4,
+      "material": "stainless steel",
+      "shape": "tube",
+      "dimensions": {
+        "diameter": "2 in.",
+        "thickness": "0.125 in.",
+        "length": "120 in."
+      },
+      "grade": "304",
+      "finish": "polished",
+      "price_per_unit": 30.00,
+      "unit": "tube",
+      "quantity_available": 250
+    },
+    {
+      "id": 5,
+      "material": "stainless steel",
+      "shape": "bar",
+      "dimensions": {
+        "thickness": "1 in.",
+        "width": "1 in.",
+        "length": "144 in."
+      },
+      "grade": "410",
+      "finish": "hot rolled",
+      "price_per_unit": 18.00,
+      "unit": "foot",
+      "quantity_available": 300
+    }
+  ]
+}
