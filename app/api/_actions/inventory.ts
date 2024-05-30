@@ -14,17 +14,22 @@ const InventoryModel = (inventory: any): IInventory => {
 };
 
 const Inventory_upsert = async (inventory: IInventory): Promise<QInventory> => {
-  const inventoryModel = InventoryModel(inventory);
+  try {
+    const inventoryModel = InventoryModel(inventory);
 
-  const updated_inventory = await db.inventory.upsert({
-    create: inventoryModel,
-    update: inventoryModel,
-    where: {
-      id: inventoryModel.id
-    }
-  });
+    const updated_inventory = await db.inventory.upsert({
+      create: inventoryModel,
+      update: inventoryModel,
+      where: {
+        id: inventoryModel.id
+      }
+    });
 
-  return updated_inventory;
+    return updated_inventory;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 };
 
 export { Inventory_upsert, InventoryModel };

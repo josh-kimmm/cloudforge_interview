@@ -2,8 +2,8 @@ import './globals.css';
 
 import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/react';
-import { Logo, EmailIcon, MetalBarsIcon, QuotesIcon } from 'app/_components/ui';
-import { User } from './user';
+import { Logo, EmailIcon } from 'app/_components/ui';
+import { User } from '@/components/home/user';
 import { NavItem } from './_components/nav-item';
 import { SessionProvider } from 'next-auth/react';
 import AdminSideBar from '@/components/admin/sidebar';

@@ -17,15 +17,20 @@ const MetalsModel = (metal: any): IMetals => {
 };
 
 const Metals_upsert = async (metal: IMetals): Promise<QMetals> => {
-  const metalModel = MetalsModel(metal);
-  const updated_metal = await db.metals.upsert({
-    create: metalModel,
-    update: metalModel,
-    where: {
-      id: metalModel.id
-    }
-  });
-  return updated_metal;
+  try {
+    const metalModel = MetalsModel(metal);
+    const updated_metal = await db.metals.upsert({
+      create: metalModel,
+      update: metalModel,
+      where: {
+        id: metalModel.id
+      }
+    });
+    return updated_metal;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 };
 
 const Metals_fetchAll = async (): Promise<Array<QMetals>> => {

@@ -10,6 +10,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   ]
 });
 
+// Can be used on both client/server components to determine if a user is signed on or not
 export const isSignedOn = async () => {
   try {
     const session = await auth();

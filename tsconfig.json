@@ -22,7 +22,7 @@
       "@/db/*": ["app/api/_db/*"],
       "@/db": ["app/api/_db"],
       "@/actions/*": ["app/api/_actions/*"],
-      "server-only": ["app/api/server-only.ts"],
+      "server-only": ["app/api/errors/server-only.ts"],
       "@/types/*": ["types/*"],
       "@/integrations/*": ["app/api/_integrations/*"]
     },

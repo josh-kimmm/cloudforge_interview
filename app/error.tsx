@@ -18,7 +18,7 @@ export default function Error({
     <main className="p-4 md:p-6">
       <div className="mb-8 space-y-4">
         <h1 className="font-semibold text-lg md:text-2xl">
-          Please complete setup
+          Something went wrong. Please try again later.
         </h1>
       </div>
     </main>

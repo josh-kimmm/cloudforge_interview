@@ -1,7 +1,6 @@
 import db from '@/db';
 import { IQuotes, QQuotes } from '@/types/prisma';
 import { generateDbId } from '@/lib/utils';
-import { errorMonitor } from 'events';
 
 const QuotesModel = (quote: any): IQuotes => {
   const QuotesModel: IQuotes = {
