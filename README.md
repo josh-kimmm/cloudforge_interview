@@ -18,7 +18,7 @@ Watch this [video](https://www.loom.com/share/8fdf01adfea44a93ad47820b10cc8cae) 
 
 # Engineering Outline
 
-In this readme, I'll be going over 4 main topics: Problem approach, Architecture/Design, Assumptions/Tradeoffs, and a Wishlist of items I wish I could've done.
+In this readme, I'll be going over 3 main topics: Problem approach, Architecture/Design, and Assumptions/Tradeoffs
 
 ## Problem approach
 
@@ -57,5 +57,3 @@ With the idea of Server Side Rendering, it allows apps built in NextJS to combin
 1. Opting to use a NextJS template meant that a lot of code were split into ways that I didn't prefer. It seemed like a lot of the UI components try to mimic what MaterialUI already does but with even more limitations. So when it came down to simple styling, I had to add whatever things to make it work (aka bandaid fixes). If I ended up having to add a lot more FE capabilities, it would've been much better to start from scratch. On the otherhand, it brought me visually pleasing tables with a LOT of CSS that I didn't end up having to write in a quick amount of time.
 
 2. Including typescript meant extra code typed and unecessary code added at times. You also have to deal with the pains of working with 3rd party types such as Prisma, so you have to find other ways to deal with typescript problems that libary would complain about. However, it gives compiler safety to make sure things are passed along in the code as they should. It's also more scalable in the future for code safety once more people starts adding to the codebase.
-
-3.
