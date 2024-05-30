@@ -1,6 +1,7 @@
 import { Button } from 'app/_components/ui/button';
 import { auth, signIn, signOut } from '@/lib/auth';
 import Image from 'next/image';
+import { redirect } from 'next/navigation';
 
 export async function User() {
   const session = await auth();
@@ -25,6 +26,7 @@ export async function User() {
         action={async () => {
           'use server';
           await signOut();
+          redirect('/');
         }}
       >
         <Button variant="outline">Sign Out</Button>

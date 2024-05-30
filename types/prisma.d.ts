@@ -1,5 +1,5 @@
 import {
-  Metals as QMetals,
+  Metals as PrismaMetals,
   Inventory as QInventory,
   Quotes as QQuotes
 } from '@prisma/client';
@@ -17,9 +17,12 @@ declare global {
 }
 
 // Q = Queried models returned by Prisma. Both schema definition and queried models should both be the same type
+type QMetals = PrismaMetals & {
+  inventory: QInventory;
+};
 export { QMetals, QInventory, QQuotes };
 
-export type IMetals = Omit<QMetals, 'created_at' | 'updated_at'>;
+export type IMetals = Omit<PrismaMetals, 'created_at' | 'updated_at'>;
 export type IInventory = Omit<QInventory, 'created_at' | 'updated_at'>;
 export type IQuotes = Omit<QQuotes, 'created_at' | 'updated_at'>;
 

@@ -1,7 +1,15 @@
 import AdminTable from '@/components/admin/table';
 import { Metals_fetchAll } from 'app/api/_actions/metals';
+import { isSignedOn } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 
 export default async function MetalsPage() {
+  const signedOn = await isSignedOn();
+
+  if (!signedOn) {
+    redirect('/');
+  }
+
   const metals = await Metals_fetchAll();
 
   return (

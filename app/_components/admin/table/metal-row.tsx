@@ -18,6 +18,12 @@ export default function MetalRow({ metal }: { metal: QMetals }) {
         ))}
       </TableCell>
       <TableCell className="hidden md:table-cell">
+        {metal.inventory.price / 100}
+      </TableCell>
+      <TableCell className="hidden md:table-cell">
+        {metal.inventory.final_quantity / 100}
+      </TableCell>
+      <TableCell className="hidden md:table-cell">
         {metal.created_at.toString()}
       </TableCell>
       <TableCell className="hidden md:table-cell">

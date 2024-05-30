@@ -24,6 +24,9 @@ const Metals_upsert = async (metal: IMetals): Promise<QMetals> => {
       update: metalModel,
       where: {
         id: metalModel.id
+      },
+      include: {
+        inventory: true
       }
     });
     return updated_metal;

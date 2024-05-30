@@ -1,7 +1,15 @@
 import AdminTable from '@/components/admin/table';
 import { Quotes_fetchAll, Quotes_upsert } from '@/actions/quotes';
+import { isSignedOn } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 
 export default async function QuotesPage() {
+  const signedOn = await isSignedOn();
+
+  if (!signedOn) {
+    redirect('/');
+  }
+
   const quotes = (await Quotes_fetchAll()).sort(
     (a, b) => b.updated_at.getTime() - a.updated_at.getTime()
   );

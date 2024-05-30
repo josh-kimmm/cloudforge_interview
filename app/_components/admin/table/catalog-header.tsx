@@ -10,6 +10,8 @@ export default function CatalogHeader() {
         <TableHead className="hidden md:table-cell">Grade</TableHead>
         <TableHead className="hidden md:table-cell">Finish</TableHead>
         <TableHead className="hidden md:table-cell">Dimensions</TableHead>
+        <TableHead className="hidden md:table-cell">Quantity</TableHead>
+        <TableHead className="hidden md:table-cell">Price Per Unit</TableHead>
         <TableHead className="hidden md:table-cell">Created At</TableHead>
         <TableHead className="hidden md:table-cell">Updated At</TableHead>
       </TableRow>
